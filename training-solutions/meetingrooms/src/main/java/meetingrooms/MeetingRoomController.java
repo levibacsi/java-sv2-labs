@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MeetingRoomController {
 
-private Office office;
+private Office office = new Office();
 
     public void readOffice() {
         Scanner scanner = new Scanner(System.in);
@@ -15,7 +15,7 @@ private Office office;
         System.out.println("új tárgyaló hosszúsága méterben?");
         int length = scanner.nextInt();
         MeetingRoom meetingRoom = new MeetingRoom(name, length, width);
-        Office.addMeetingRoom(meetingRoom);
+        office.addMeetingRoom(meetingRoom);
     }
 
     public void printMenu(){
@@ -37,7 +37,6 @@ private Office office;
         Scanner scanner = new Scanner(System.in);
         int menuNumber = scanner.nextInt();
         scanner.nextLine();
-        Office office = new Office();
         switch (menuNumber) {
             case 1:
                 readOffice();

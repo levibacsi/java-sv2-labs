@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Office {
-    private static List<MeetingRoom> meetingRooms = new ArrayList<>();
+    private List<MeetingRoom> meetingRooms = new ArrayList<>();
 
     public List<MeetingRoom> getMeetingRooms() {
         return meetingRooms;
     }
 
-    public static void addMeetingRoom(MeetingRoom meetingRoom){
+    public void addMeetingRoom(MeetingRoom meetingRoom){
         meetingRooms.add(meetingRoom);
     }
 
