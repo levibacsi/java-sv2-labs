@@ -32,7 +32,5 @@ public class Message {
         }
 
         System.out.println(anotherCodedCharacters);
-
-        }
+    }
 }
-//
