@@ -18,7 +18,7 @@ public class IceCream {
             }
             sb.append(name);
         }
-        System.out.println(names);
+        System.out.println("Ma kapható: " + sb + ". Gyerekeknek féláron!");
     }
 
 }
