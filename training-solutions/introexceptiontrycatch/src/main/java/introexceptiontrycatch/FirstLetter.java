@@ -1,0 +1,21 @@
+package introexceptiontrycatch;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class FirstLetter {
+
+    public static void main(String[] args) {
+        List<String > wordList = new ArrayList(Arrays.asList("Tinker", "Tailor", "Soldier", null, "Sailor"));
+        try {
+            for (String word : wordList) {
+                System.out.println(word.charAt(0));
+            }
+        }
+        catch (NullPointerException npe){
+            System.out.println(npe.getMessage());
+            npe.printStackTrace();
+        }
+    }
+}
